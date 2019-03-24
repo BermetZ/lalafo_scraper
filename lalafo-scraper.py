@@ -50,7 +50,6 @@ def main():
     total_pages = get_total_pages(get_html(url))
     for i in range(1, total_pages):
         url_gen = url + page_part + str(i)
-        #print(url_gen)
         html = get_html(url_gen)
         get_page_data(html)
 
